@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+
+logging:
+  level:
+    com.growwealth.advisor: INFO
+    org.springframework.security: WARN
+    org.hibernate: WARN

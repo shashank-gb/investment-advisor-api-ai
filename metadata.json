@@ -1,0 +1,6 @@
+{
+  "name": "GrowWealth Backend - Spring Boot & PostgreSQL API",
+  "description": "Production-grade Java Spring Boot and Supabase (PostgreSQL) backend server, live API gateway, schema viewer, and interactive setup guide for the GrowWealth Investment Advisor Flutter mobile app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

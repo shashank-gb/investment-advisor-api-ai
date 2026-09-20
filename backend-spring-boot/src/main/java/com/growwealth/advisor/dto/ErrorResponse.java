@@ -1,0 +1,27 @@
+package com.growwealth.advisor.dto;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.Instant;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class ErrorResponse {
+    private String message;
+    
+    @JsonProperty("statusCode")
+    private Integer statusCode;
+    
+    private String code;
+    
+    @Builder.Default
+    private Instant timestamp = Instant.now();
+}
